@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  background-image: url("Sakura Ramen Webseite - Desktop/assets/img/1_hero/JPG/hero_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100dvh;
+}
+
+.hero-content img {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+  z-index: 10;
+}
+
+.hero-content {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+.phone-button {
+  background-color: #9f0908;
+  color: white;
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.phone-button a {
+  color: white;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  padding-right: 160px;
+  z-index: 10;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.menu a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.headline {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+}
+
+.headline h1 {
+  font-size: 96px;
+  font-weight: bold;
+  margin: 0;
+  width: 100%;
+}
+
+.headline p {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.order h2 {
+  font-size: 80px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: #9f0908;
+  margin-top: 120px;
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.order img {
+  width: 128px;
+  margin-bottom: 16px;
+}
+
+.order-steps-container {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 120px;
+  margin-top: 120px;
+}
+
+.order-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Economica", sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.menu2 {
+  background-image: url("Sakura Ramen Webseite - Desktop/assets/img/3_section_our_menu/JPG/ourMenu.jpg");
+  background-size: cover;
+  width: 100%;
+  padding-top: 120px;
+}
+
+h2 {
+  font-size: 80px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: #9f0908;
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  display: flex;
+  align-items: center;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.menu-items th {
+  font-family: "Economica", sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  align-items: end;
+  color: #000000;
+  padding-bottom: 16px;
+}
+
+.menu-items td {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  color: #675e54;
+  font-weight: bold;
+  height: 20px;
+  padding-bottom: 8px;
+}
+
+.menu-items img {
+  width: 352px;
+  height: 352px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 56px;
+  width: 100%;
+  gap: 80px;
+  padding-left: 15rem;
+}
+
+.menu-item1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 56px;
+  width: 100%;
+  gap: 80px;
+  padding-right: 15rem;
+}
+
+.container h2 {
+  font-size: 80px;
+  font-family: "Raleway", sans-serif;
+  color: #9f0908;
+  margin-bottom: 8px;
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.map {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+
+.map img {
+  width: 32px;
+  height: 32px;
+}
+
+.map h3 {
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+  padding-bottom: 64px;
+}
+
+.google-maps {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+}
+.google-maps iframe {
+  width: 100%;
+}
+
+.footer {
+  background-color: #0a141e;
+  height: 144px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footer-link {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 800px) {
+  .menu a {
+    display: none;
+  }
+  .hero-content img {
+    margin-left: 20px;
+  }
+  .phone-button {
+    margin-left: 100px;
+    width: 220px;
+    padding: 8px;
+  }
+}
