@@ -531,8 +531,13 @@ td {
   footer {
     height: 86px;
   }
+  .footer-link img {
+    width: 32px;
+    border: 2px solid red;
+    justify-content: end;
+  }
   .footer-link {
-    display: none;
+    border: 2px solid white;
   }
   }
 
