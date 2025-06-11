@@ -5,48 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      href="Sakura Ramen Webseite - Desktop/assets/img/1_hero/PNG/sakura_logo.png"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="icon" href="Sakura Ramen Webseite - Desktop/assets/img/1_hero/PNG/sakura_logo.png"/>
     <link rel="stylesheet" href="style.css" />
     <title>Sakura Ramen</title>
   </head>
 
   <body>
-    <div class="hero-content">
+<!-- #region 01 header img menu -->
+    <header>
       <div>
         <img
           src="Sakura Ramen Webseite - Desktop/assets/img/1_hero/SVG/sakura_logo.svg"
           alt="Sakura Ramen Logo"
         />
       </div>
+      
+<!-- #region header menu phone-->
       <div class="menu">
         <a href="#our-menu">MENU</a>
         <a href="#adress">LOCATIONS</a>
         <a href="">ABOUT</a>
-        <div class="phone-button" href="tel:017654564534"
-          >&#9990; 0176 54564534</div
+        <div class="phone-button" ><a href="tel:017654564534"
+          >&#9990; 0176 54564534</a></div
         >
       </div>
-    </div>
-    <section class="hero"></section>
+<!-- #endregion header menu phone-->
 
+    </header>
+<!-- #endregion 01 header img menu -->
+
+<!-- #region hero -->
+    <section id="hero"></section>
+    <!-- #endregion hero -->
+
+<!-- #region headline -->
     <section class="headline">
       <h1>SAKURA RAMEN</h1>
       <p>THE BEST RAMEN IN TOWN</p>
     </section>
+  <!-- #endregion headline -->
 
-    <section class="order">
-      <div>
+<!-- #region how to order -->
+    <section id="order">
+      <div class="order2">
         <div>
           <h2>HOW TO ORDER</h2>
         </div>
-        <div class="order-steps-container">
+        <div class="steps-container">
           <div class="order-steps">
             <img
               src="Sakura Ramen Webseite - Desktop/assets/img/2_section_how_to_order/PNG/noodle.png"
@@ -71,7 +77,9 @@
         </div>
       </div>
     </section>
+    <!-- #endregion how to order -->
 
+<!-- #region our menu -->
     <section class="menu2" id="our-menu">
       <h2>OUR MENU</h2>
       <div class="menu-items">
@@ -81,8 +89,10 @@
             alt="Menu Icon"
           />
           <table>
-            <th>Tonkotsu Ramen</th>
-            <tr>
+              <tr>
+                <th>Tonkotsu Ramen</th>
+              </tr>
+            <tbody>
               <td>CHICKEN</td>
               <td>11,95€</td>
             </tr>
@@ -94,6 +104,7 @@
               <td>SHRIMP</td>
               <td>13,95€</td>
             </tr>
+            </tbody>
           </table>
         </div>
         <div class="menu-item">
@@ -140,7 +151,9 @@
         </div>
       </div>
     </section>
+<!-- #endregion our menu -->
 
+<!-- #region adress -->
     <section class="container" id="adress">
       <h2>FIND US AT</h2>
       <div class="map">
@@ -162,9 +175,11 @@
         ></iframe>
       </div>
     </section>
+    <!-- #endregion adress -->
 
+<!-- #region footer -->
     <section class="footer">
-      <div class="footer-img-left">
+      <div>
         <img
           src="Sakura Ramen Webseite - Desktop/assets/img/5_section_footer/SVG/sakura_ramen_logo_and_text.svg"
           alt="Sakura Ramen Logo"
@@ -188,5 +203,6 @@
         /></a>
       </div>
     </section>
+    <!-- #endregion footer -->
   </body>
 </html>
