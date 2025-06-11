@@ -531,5 +531,8 @@ td {
   footer {
     height: 86px;
   }
+  .footer-link {
+    display: none;
+  }
   }
 
