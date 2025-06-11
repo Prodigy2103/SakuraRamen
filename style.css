@@ -13,17 +13,20 @@ body {
 }
 /* #region header img menu */
 header {
-  position: absolute;
   width: 100%;
-  height: 112px;
+  height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  position: absolute;
   z-index: 10;
+
   img {
     width: 64px;
     height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 160px;
   }
 }
@@ -33,30 +36,57 @@ header {
 
 .menu {
   display: flex;
-  gap: 20px;
+  align-items: center;
   font-family: "Raleway", sans-serif;
   font-size: 24px;
-  margin-right: 160px;
   z-index: 10;
   a {
     color: white;
     text-decoration: none;
     font-size: 24px;
-    padding: 10px;
+    padding: 16px;
   }
-  .phone-button {
-    background-color: #9f0908;
-    color: white;
-    padding: 8px;
-    border: 1px solid white;
-    border-radius: 5px;
-    flex: 1;
-  }
+}
+
+.phone-button {
+  background-color: #9f0908;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 .menu a:hover {
   color: grey;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    gap: 380px;
+    img {
+      margin-left: 24px;
+    }
+  }
+  .menu {
+    display: flex;
+    padding-right: 24px;
+    a {
+      display: none;
+    }
+  }
+
+  .phone-button a {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    font-size: 20px;
+  }
 }
 /* #endregion header menu phone in 01 header */
 
@@ -64,8 +94,14 @@ header {
 #hero {
   background-image: url("Sakura Ramen Webseite - Desktop/assets/img/1_hero/JPG/hero_bg.jpg");
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100dvh;
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 0;
+  }
 }
 /* #endregion hero */
 
@@ -88,6 +124,16 @@ header {
     p {
       font-size: 24px;
       margin-top: 20px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .headline {
+    h1 {
+      font-size: 72px;
+      p {
+      font-size: 20px;
+    }
     }
   }
 }
@@ -133,7 +179,9 @@ header {
     }
   }
 }
+/* #endregion how to order */
 
+/* #region our menu */
 .menu2 {
   background-image: url("Sakura Ramen Webseite - Desktop/assets/img/3_section_our_menu/JPG/ourMenu.jpg");
   background-size: cover;
@@ -158,9 +206,7 @@ header {
   justify-content: space-between;
   margin-bottom: 120px;
 }
-/* #endregion how to order */
 
-/* #region our menu */
 table {
   width: 90%;
 }
